@@ -31,15 +31,15 @@ for i in range (cantidad_medicos):
             if experiencia < 0:
                 print ("¡Error clínico! Ingresa un número entero positivo para la experiencia.")
             else:
-                if experiencia >= 5:
+                if experiencia > 5:
                     especialista_senior = especialista_senior + 1
-                    print ("El médico registrado es un especialista senior.")
+                    print ("El médico registrado es un Especialista Senior.")
                 else:
                     residente_junior = residente_junior + 1
-                    print ("El médico registrado es un residente junior.")
+                    print ("El médico registrado es un Residente Junior.")
                 break 
         except ValueError:
             print ("¡Error clínico! Ingresa un número entero positivo para la experiencia.")
         
-print ("\nEl hospital cuenta con ", especialista_senior, "especialistas senior y", residente_junior, "residentes junior! ¡Sistema listo para operar!")
+print ("\n¡El hospital cuenta con ", especialista_senior, "Especialistas Senior y", residente_junior, "Residentes Junior! ¡Sistema listo para operar!")
     
